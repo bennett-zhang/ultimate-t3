@@ -1,0 +1,74 @@
+#game {
+	text-align: center;
+	transition: filter 0.5s;
+}
+
+#game.disabled {
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+}
+
+#game>table {
+	display: inline-block;
+	border-collapse: separate;
+	border-spacing: 12px;
+}
+
+.smallBoard {
+	position: relative;
+	padding: 10px;
+	transition: border 0.5s;
+	border-radius: 8px;
+	font-size: 120px;
+	font-weight: 100;
+}
+
+.smallBoard.enabled {
+	border: 2px solid slategray;
+}
+
+.smallBoard.disabled {
+	border: 2px solid transparent;
+}
+
+.smallBoard::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	content: attr(data-winner);
+}
+
+.cell {
+	min-width: 50px;
+	height: 50px;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.cell.enabled:hover {
+	cursor: pointer;
+	background-color: silver;
+}
+
+.cell.disabled {
+	cursor: default;
+}
+
+.cell.W, .cell.C, .cell.E, .cell.SW, .cell.S, .cell.SE {
+	border-top: 2px solid gray;
+}
+
+.cell.NW, .cell.N, .cell.NE, .cell.W, .cell.C, .cell.E {
+	border-bottom: 2px solid gray;
+}
+
+.cell.N, .cell.NE, .cell.C, .cell.E, .cell.S, .cell.SE {
+	border-left: 2px solid gray;
+}
+
+.cell.NW, .cell.N, .cell.W, .cell.C, .cell.SW, .cell.S {
+	border-right: 2px solid gray;
+}

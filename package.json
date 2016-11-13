@@ -1,0 +1,31 @@
+{
+	"name": "ultimate-tic-tac-toe",
+	"version": "0.0.1",
+	"description": "An app that lets people play the game of ultimate tic tac toe",
+	"author": "Bennett Zhang <zhangbennett@yahoo.com>",
+	"engines": {
+		"node": "6.9.1"
+	},
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"ejs": "^2.5.2",
+		"express": "^4.14.0",
+		"socket.io": "^1.5.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bennett-zhang/ultimate-t3"
+	},
+	"keywords": [
+		"ultimate",
+		"tic",
+		"tac",
+		"toe",
+		"multiplayer",
+		"game"
+	],
+	"license": "MIT"
+}
