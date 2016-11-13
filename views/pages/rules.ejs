@@ -10,7 +10,57 @@
 		</header>
 		<main>
 			<h1>The Rules</h1>
-			<p>Under construction</p>
+			<p>These rules assume you know how to play regular tic tac toe.</p>
+			<h2>The Board</h2>
+			<p>An ultimate tic tac toe board is made up of 9 regular sized tic tac toe boards, as shown below. Each regular sized tic tac toe board has 9 cells. I will refer to the location of these boards and cells using compass directions.</p>
+			<div>
+				<h3>X's turn</h3>
+				<img src="../img/empty-board.png" class="img-responsive">
+			</div>
+			<h2>Moving</h2>
+			<p>The player who goes first gets to move anywhere on the board.</p>
+			<div>
+				<h3>O's turn</h3>
+				<img src="../img/first-move.png" class="img-responsive">
+			</div>
+			<p>In this case, X chose to move in the northwestern corner of one of the smaller boards. This means on the next turn, O is forced to move in the northwestern board. The board that O is forced to move in is outlined in blue-gray.</p>
+			<div>
+				<h3>X's turn</h3>
+				<img src="../img/second-move.png" class="img-responsive">
+			</div>
+			<p>O decided to move in the southern cell of the northwestern board. This forces X to move in the southern board on the following turn.</p>
+			<div>
+				<h3>O's turn</h3>
+				<img src="../img/third-move.png" class="img-responsive">
+			</div>
+			<p>Because X chose to move in the center cell, O now has to move in the center board.</p>
+			<p>By now you hopefully have a gist of how moving works in ultimate tic tac toe. There are some interesting strategies that come into play as a result of these rules. Let's fast forward a couple of turns.</p>
+			<div>
+				<h3>X's turn</h3>
+				<img src="../img/strategy.png" class="img-responsive">
+			</div>
+			<p>It is X's turn in the image above. At first glance, it seems tempting to move in the center cell, allowing X to win the eastern board.</p>
+			<div>
+				<h3>O's turn</h3>
+				<img src="../img/strategy-2.png" class="img-responsive">
+			</div>
+			<p>However, doing so sends O to the center board.</p>
+			<div>
+				<h3>X's turn</h3>
+				<img src="../img/strategy-3.png" class="img-responsive">
+			</div>
+			<p>This would allow O to win the center board, putting X at a disadvantage. Now, say X wishes to block O by moving in the center cell.</p>
+			<div>
+				<h3>O's turn</h3>
+				<img src="../img/strategy-4.png" class="img-responsive">
+			</div>
+			<p>Normally, O would be sent to the center board after X moved in the center cell. However, since the center board has already been won, O can now move anywhere on the board.</p>
+			<h2>Winning</h2>
+			<p>The game is won once one of the players gets three in a row.</p>
+			<div>
+				<h3>O wins!</h3>
+				<img src="../img/o-wins.png" class="img-responsive">
+			</div>
 		</main>
 		<footer>
 			<% include ../partials/footer %>
