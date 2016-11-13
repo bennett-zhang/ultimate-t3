@@ -24,10 +24,10 @@ app.get("/local-game", function(req, res) {
 app.get("/online-game", function(req, res) {
 	var rand = Math.random().toString(36).slice(2);
 	res.redirect("/online-game/" + rand);
+});
 
-	app.get("/online-game/" + rand, function(req, res) {
-		res.render("pages/online-game");
-	});
+app.get("/online-game/*", function(req, res) {
+	res.render("pages/online-game");
 });
 
 io.on("connection", function(socket) {
@@ -71,7 +71,7 @@ io.on("connection", function(socket) {
 
 	socket.on("move", function(move) {
 		room.game.history.push(move);
-		socket.broadcast.emit("move", move);
+		socket.broadcast.to(rand).emit("move", move);
 	});
 
 	socket.on("disconnect", function() {
