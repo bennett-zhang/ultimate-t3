@@ -1,7 +1,7 @@
 {
 	"name": "ultimate-tic-tac-toe",
 	"version": "0.0.1",
-	"description": "An app that lets people play the game of ultimate tic tac toe",
+	"description": "Play ultimate tic tac toe online with a friend or against the computer. Features a lighting fast artificial intelligence. Supports gameplay on multiple devices.",
 	"author": "Bennett Zhang <zhangbennett@yahoo.com>",
 	"engines": {
 		"node": "6.9.1"
@@ -25,7 +25,9 @@
 		"tac",
 		"toe",
 		"multiplayer",
-		"game"
-	],
-	"license": "MIT"
+		"game",
+		"artificial",
+		"intelligence",
+		"computer"
+	]
 }
