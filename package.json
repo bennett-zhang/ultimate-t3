@@ -1,8 +1,8 @@
 {
 	"name": "ultimate-tic-tac-toe",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Play ultimate tic tac toe online with a friend or against the computer. Features a lighting fast artificial intelligence. Supports gameplay on multiple devices.",
-	"author": "Bennett Zhang <zhangbennett@yahoo.com>",
+	"author": "Bennett Zhang <bennett.d.zhang@gmail.com>",
 	"engines": {
 		"node": "6.9.1"
 	},
